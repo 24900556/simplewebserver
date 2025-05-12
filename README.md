@@ -36,45 +36,47 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-        '''
-        from http.server import HTTPServer, BaseHTTPRequestHandler
-        content ="""
-        <html>
-        <title>Top Software Industries</title>
-        <body>
-        <table border="2" cellspacing="10"cellpadding="6">
-        <tr>
-        <th>s.no</th>
-        <th>companies</th>
-        <th>revenue</th>
-        </tr>
-        <tr>
-        <th>1</th>
-        <th>Microsoft</th>
-        <th>65 billion</th>
-        </tr>
-        <tr>
-        <th>2</th>
-        <th>oracle</th>
-        <th>29.6 billion</th>
-        </tr>
-        <tr>
-        <th>3</th>
-        <th>IBM</th>
-        <th>29.1 billion</th>
-        </tr>
-        <tr>
-        <th>4</th>
-        <th>SAP</th>
-        <th>6.4 billion</th>
-        </tr>
-        <tr>
-        <th>5</th>
-        <th>symentec</th>
-        <th>5.6 billion</th>
-        </body>
-        </hyml>
-        """
+       from http.server import HTTPServer, BaseHTTPRequestHandler
+
+content = """
+<html>
+<title>Top Countries by GDP</title>
+<body>
+<table border="2" cellspacing="10" cellpadding="6">
+<tr>
+<th>s.no</th>
+<th>Country</th>
+<th>GDP</th>
+</tr>
+<tr>
+<th>1</th>
+<th>United States</th>
+<th>21.43 trillion USD</th>
+</tr>
+<tr>
+<th>2</th>
+<th>China</th>
+<th>14.34 trillion USD</th>
+</tr>
+<tr>
+<th>3</th>
+<th>Japan</th>
+<th>5.08 trillion USD</th>
+</tr>
+<tr>
+<th>4</th>
+<th>Germany</th>
+<th>3.84 trillion USD</th>
+</tr>
+<tr>
+<th>5</th>
+<th>India</th>
+<th>2.87 trillion USD</th>
+</tr>
+</table>
+</body>
+</html>
+"""
         
         class myhandler(BaseHTTPRequestHandler):
             def do_GET(self):
@@ -91,8 +93,8 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
         
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-03-19 141226.png>)
 
-![alt text](<Screenshot 2025-03-19 141538.png>)
+
+
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
