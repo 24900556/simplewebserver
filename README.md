@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date:18.04.2025
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite.
@@ -36,45 +36,44 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-'''
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content ="""
+```
 <html>
-<title>Top Software Industries</title>
+<title>Top Smartphone Manufacturers</title>
 <body>
-<table border="2" cellspacing="10"cellpadding="6">
+<table border="2" cellspacing="10" cellpadding="6">
 <tr>
-<th>s.no</th>
-<th>companies</th>
-<th>revenue</th>
+<th>S.No</th>
+<th>Company</th>
+<th>Market Share (%)</th>
 </tr>
 <tr>
-<th>1</th>
-<th>Microsoft</th>
-<th>65 billion</th>
+<td>1</td>
+<td>Samsung</td>
+<td>20.1</td>
 </tr>
 <tr>
-<th>2</th>
-<th>oracle</th>
-<th>29.6 billion</th>
+<td>2</td>
+<td>Apple</td>
+<td>18.8</td>
 </tr>
 <tr>
-<th>3</th>
-<th>IBM</th>
-<th>29.1 billion</th>
+<td>3</td>
+<td>Xiaomi</td>
+<td>12.7</td>
 </tr>
 <tr>
-<th>4</th>
-<th>SAP</th>
-<th>6.4 billion</th>
+<td>4</td>
+<td>Oppo</td>
+<td>8.6</td>
 </tr>
 <tr>
-<th>5</th>
-<th>symentec</th>
-<th>5.6 billion</th>
+<td>5</td>
+<td>Vivo</td>
+<td>7.5</td>
+</tr>
+</table>
 </body>
-</hyml>
-"""
+</html>
 
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -87,12 +86,11 @@ server_address =('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-'''
-
+```
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-03-19 141226.png>)
+![alt text](<Screenshot 2025-05-17 163550.png>)
+![alt text](<Screenshot 2025-05-17 163832.png>)
 
-![alt text](<Screenshot 2025-03-19 141538.png>)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
